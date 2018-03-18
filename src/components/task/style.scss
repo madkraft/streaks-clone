@@ -1,0 +1,13 @@
+@import '../../style/index';
+
+.taskContainer {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.taskName {
+  color: #fff;
+}
+
