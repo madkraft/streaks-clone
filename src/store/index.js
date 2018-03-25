@@ -12,7 +12,8 @@ const initialState = {
       currentTimes: 0
     }
   ],
-  tasksLimit: 3
+  tasksLimit: 3,
+  isAddTaskOpen: false
 }
 
 const middlewares = connect ? applyMiddleware(connect(initialState)) : []

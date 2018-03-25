@@ -15,25 +15,27 @@ const increment = (state, id) => {
   return { tasks: newTasks }
 }
 
-const addTask = state => {
+const addTask = (state, newTask) => {
   if (state.tasks.length === state.tasksLimit) {
     return
-  }
-
-  const newTask = {
-    id: state.tasks.length,
-    name: 'New',
-    isDone: false,
-    goalTimes: 1,
-    currentTimes: 0
   }
 
   return { tasks: [...state.tasks, newTask] }
 }
 
+const openTakeover = state => {
+  return { isAddTaskOpen: true }
+}
+
+const closeTakeover = state => {
+  return { isAddTaskOpen: false }
+}
+
 const actions = store => ({
   increment,
-  addTask
+  addTask,
+  openTakeover,
+  closeTakeover
 })
 
 export default actions

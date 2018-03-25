@@ -1,0 +1,20 @@
+$circle-size: 120px;
+$circle-background: rgba(#000, 0.5);
+$circle-color: #fff;
+$inset-size: 105px;
+$inset-color: #ff704c;
+$transition-length: 0.5s;
+
+.Button {
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  min-width: 200px;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.buttonWrapper {
+  text-align: center;
+}
